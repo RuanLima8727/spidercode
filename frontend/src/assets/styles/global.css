@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;600;700&display=swap');
+
+* {
+    margin : 0;   
+    padding : 0;
+    box-sizing: border-box;
+    /*
+    Basicamente isso impede que o valor da box seja alterado sem querer, por um padding por exemplo, que poderia expandir de maneira indesejada o tamanho da box do div
+    */
+}
+
+html {
+    font-family: 'Comfortaa', cursive;
+}
+a {
+    text-decoration : none;
+}
