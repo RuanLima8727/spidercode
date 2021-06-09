@@ -1,8 +1,8 @@
 .section-1 {
     width : 100% ; 
     height : 88vh ; 
-    background-image: linear-gradient(to bottom, #447BBE, #4F759B);
-    opacity: 90%;
+    background-image: linear-gradient(to bottom,#ED4731, #ED4731  ,#b11313);
+  
 }
 .section-1 .container { 
    max-width : 1264px;
@@ -16,12 +16,13 @@
     align-items:center;
     padding: 0px/*Vertical*/  32px/*Horizontal*/;
 
-    background-color: red;
+    /*  */
+    background-color: rgb(95, 236, 0);
     border : solid black;
 }
 
 .section-1 .container header h2 {
-    color : #FCFFF7;
+    color : #FEFBEC;
     font-size : 35px;
 }
 
@@ -37,21 +38,22 @@
 
 .section-1 .container header nav button:nth-child(1) {
     background-color: transparent;
-    border : 2px solid #FCFFF7;
+    border : 2px solid #FEFBEC;
     margin-right: 8px;
+    color: #FEFBEC;
 }
 .section-1 .container header nav button:nth-child(2) {
-    background-color: rgb(177, 19, 19, 0.9);
-   
+    background-color: #2B3784;
+    color: #FEFBEC
 }
 
 .section-1 .container main  {
     display : flex;
     height: 72vh;
-
+    
 
      /*  */
-    border : solid rgb(212, 0, 255);
+    border : solid rgb(109, 0, 131);
 }
 
 
@@ -60,25 +62,56 @@
 }
 
 .section-1 .container main section:nth-child(1) {
-
-
+    
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 21vh 0px 0px 32px;
+   
 
      /*  */
     border : solid yellow;
     background-color: rgba(231, 210, 14, 0.2);
 }
 
+.section-1 .container main section:nth-child(1) h1 {
+    color : #FEFBEC ;
+    font-size: 46px;
+    line-height: 46px;
+    
+}
+.section-1 .container main section:nth-child(1) img {
+    margin-top: 24px;
+
+    /*  */
+    width: 40vh;
+    height: 0.5vh;
+}
+.section-1 .container main section:nth-child(1) p{
+    margin-top: 24px;
+    color : #FEFBEC ;
+    font-size: 18px;
+   
+}
+
+
+
 .section-1 .container main section:nth-child(2) {
     display:flex;
     align-items: flex-end; /*Vertical*/
     justify-content: flex-end; /*Horizontal*/
-
+    padding-right: 32px;
+    padding-bottom: 1vh;
+  
+   
 
     /*  */
-    border : solid rgb(255, 0, 0);
-    background-color: rgba(238, 5, 44, 0.2);
+    border : solid rgb(70, 96, 240);
+    background-color: rgba(157, 255, 0, 0.5);
     overflow: hidden;
 }
+
 
 
 

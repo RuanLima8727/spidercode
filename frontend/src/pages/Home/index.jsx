@@ -1,12 +1,16 @@
 import React from 'react'
 
 import './styles.css'
-import separator from '../../assets/images/separator.svg'
-import homeImage from '../../assets/images/homeImage.png'
+import separator from '../../assets/images/separator.png'
+import homeImage from '../../assets/images/a.png'
+
+import Animation from '../../components/animation'
 
 
 const Home = ()=> {
     return (
+        <>
+        <Animation/>
         <div className="section-1">
             <div className="container">
                 <header>
@@ -18,7 +22,7 @@ const Home = ()=> {
                </header>
                 <main>
                     <section>
-                        <h1>"Junte-se com mais de mil <br/> alunos e torne-se o melhor herói!"</h1>
+                        <h1>Junte-se com mais de mil alunos!</h1>
                         <img src={separator}  alt=""/>
                         <p>Com grandes poderes <br/> vem grandes responsabilidades!</p>
                     </section>
@@ -28,6 +32,7 @@ const Home = ()=> {
               </main>
             </div>
         </div>
+    </>
     )
 }
 
