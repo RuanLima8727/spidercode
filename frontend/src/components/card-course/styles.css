@@ -1,0 +1,19 @@
+/* Aqui você aplica estilos no article que faz efeito na imagem e no h4 */
+.section-2 .container .card-container article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section-2 .container .card-container article img {
+    width:  80%;
+    border-radius: 4px;
+    /* aaaaaaaa */
+}
+
+.section-2 .container .card-container article h4 {
+    color :#FEFBEC;
+    padding-top: 8px;
+    text-align: center;
+}

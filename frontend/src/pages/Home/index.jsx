@@ -7,14 +7,17 @@ import homeImage from '../../assets/images/a.png'
 import phpCourse from '../../assets/images/courses/php.jpg'
 import reduxCourse from '../../assets/images/courses/react-redux.png'
 import flutterCourse from '../../assets/images/courses/flutter.png'
+import courseCard from '../../assets/images/courseCard.png'
 
 import Animation from '../../components/animation'
+import CardCourse from '../../components/card-course'
+import CategoryCard from '../../components/category-card'
 
 
 const Home = ()=> {
     return (
         <>
-        <Animation/>
+        {/* <Animation/> */}
         <div className="section-1">
             <div className="container">
                 <header>
@@ -41,23 +44,57 @@ const Home = ()=> {
                 <h2>3 Cursos totalmente de graça!</h2>
                 <p>Crie uma conta e receba 3 cursos gratuitamente!!</p>
                 <section className="card-container">
-                    <article>
-                        <img src={phpCourse} alt="Elefante mascote do php"></img>
-                        <h4>Aprenda Back-End com PHP 7</h4>
-                    </article>
-                    <article>
-                        <img src={reduxCourse} alt="Elefante mascote do php"></img>
-                        <h4>Desenvolvimento Front-End<br/> com React e Redux</h4>
-                    </article>
-                    <article>
-                        <img src={flutterCourse} alt="Elefante mascote do php"></img>
-                        <h4>Torne-se um desenvolvedor<br/>mobile Com Flutter</h4>
-                    </article>
+                    <CardCourse 
+                        image={phpCourse} 
+                        alt={"Elefante mascote do php"}>
+                        Aprenda Back-End com PHP 7
+                    </CardCourse>
+
+                    <CardCourse 
+                        image={reduxCourse} 
+                        alt={"icones do react e redux"}>
+                         Desenvolvimento Front-End <br/> com React e Redux
+                    </CardCourse>
+
+                    <CardCourse 
+                        image={flutterCourse} 
+                        alt={"icone do flutter"}>  
+                        Torne-se um desenvolvedor<br/> mobile Com Flutter
+                    </CardCourse> 
+
                 </section>
                 <button>
                     INSCREVA-SE
                 </button>
                 
+            </div>
+        </div>
+        <div className="section-3">
+            <div className="container">
+                <h2>O que oferecemos para você!</h2>
+                <section className="category-card-container">
+                    <section>
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+                    </section>
+                    
+                    <section>
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+
+                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                            category={"Back-End"} courseAmount={"22"}/>
+                    </section>
+                </section>
             </div>
         </div>
     </>
