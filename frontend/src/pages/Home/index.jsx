@@ -7,7 +7,8 @@ import homeImage from '../../assets/images/a.png'
 import phpCourse from '../../assets/images/courses/php.jpg'
 import reduxCourse from '../../assets/images/courses/react-redux.png'
 import flutterCourse from '../../assets/images/courses/flutter.png'
-import courseCard from '../../assets/images/courseCard.png'
+import backCard from '../../assets/images/backend.png'
+import frontCard from '../../assets/images/frontend.png'
 
 import Animation from '../../components/animation'
 import CardCourse from '../../components/card-course'
@@ -17,7 +18,7 @@ import CategoryCard from '../../components/category-card'
 const Home = ()=> {
     return (
         <>
-        {/* <Animation/> */}
+        <Animation/>
         <div className="section-1">
             <div className="container">
                 <header>
@@ -74,24 +75,24 @@ const Home = ()=> {
                 <h2>O que oferecemos para você!</h2>
                 <section className="category-card-container">
                     <section>
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
                     </section>
                     
                     <section>
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 
-                        <CategoryCard image={courseCard} alt={"imagem do tipo de curso"}
+                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
                     </section>
                 </section>

@@ -15,3 +15,22 @@ html {
 a {
     text-decoration : none;
 }
+
+/* Código para edição da barra de rolagem */
+
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #2b3784;
+ 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #FEFBEC;
+    border-radius: 10px;
+    
+}
+

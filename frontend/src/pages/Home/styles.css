@@ -206,6 +206,8 @@
  .section-3 .container .category-card-container section {
     display : flex;
     justify-content: space-between;
+    
+    
  }
 
 
