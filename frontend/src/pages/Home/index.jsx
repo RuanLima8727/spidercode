@@ -18,7 +18,7 @@ import CategoryCard from '../../components/category-card'
 const Home = ()=> {
     return (
         <>
-        <Animation/>
+        {/* <Animation/> */}
         <div className="section-1">
             <div className="container">
                 <header>
@@ -35,7 +35,7 @@ const Home = ()=> {
                         <p>Com grandes poderes <br/> vem grandes responsabilidades!</p>
                     </section>
                     <section>
-                        <img src={homeImage} alt="Homem Aranha, Imagem da inicial" />
+                        <img src={homeImage} alt="Homem Aranha, Imagem da tela inicial" />
                     </section>
               </main>
             </div>
@@ -83,9 +83,7 @@ const Home = ()=> {
 
                         <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
-                    </section>
                     
-                    <section>
                         <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 

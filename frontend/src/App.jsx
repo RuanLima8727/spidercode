@@ -9,7 +9,7 @@ const App = () => {
   var [variavel,funcao] = React.useState("mamaco")
 
   function teste ( ) {
-    if (variavel=="prego"){
+    if (variavel==="prego"){
       funcao("mamaco")
     }
     else {
