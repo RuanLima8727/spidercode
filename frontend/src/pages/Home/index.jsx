@@ -9,6 +9,7 @@ import reduxCourse from '../../assets/images/courses/react-redux.png'
 import flutterCourse from '../../assets/images/courses/flutter.png'
 import backCard from '../../assets/images/backend.png'
 import frontCard from '../../assets/images/frontend.png'
+import barsSolid from '../../assets/images/bars-solid.svg'
 
 import Animation from '../../components/animation'
 import CardCourse from '../../components/card-course'
@@ -25,7 +26,10 @@ const Home = ()=> {
                     <h2>SPIDER CODE</h2>
                     <nav>
                         <button >LOGIN</button>
-                        <button >SE INSCREVA</button>    
+                        <button >SE INSCREVA</button> 
+                        <div>
+                            <img src={barsSolid} alt="Menu hamburguer"/>    
+                        </div>   
                     </nav>
                </header>
                 <main>

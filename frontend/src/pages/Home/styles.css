@@ -20,6 +20,7 @@
 .section-1 .container header h2 {
     color : #FEFBEC;
     font-size : 35px;
+   
 }
 
 .section-1 .container header nav button {
@@ -40,6 +41,10 @@
 }
 .section-1 .container header nav button:nth-child(2) {
     background-color: #2B3784;
+}
+
+.section-1 .container header nav div {
+    display: none;
 }
 
 .section-1 .container main  {
@@ -204,6 +209,20 @@
 }
 
 @media (max-width : 900px) {
+    .section-1 .container header nav button {
+        display: none;
+    }
+    .section-1 .container header nav div{
+        display: flex;
+        background-color: #2B3784;
+        width: 60px;
+        height: 60px;
+        justify-content: center;
+    }
+    .section-1 .container header nav div img{
+        width:40px;
+    }
+
     .section-1 .container main section:nth-child(1) {
         width: 100%;
         /* background-color: green; */
@@ -222,6 +241,9 @@
 }
 
 @media (max-width : 620px) {
+    .section-1 .container header h2 {
+        font-size : 30px;
+    }
     .section-1 .container main section:nth-child(1) {
         padding: 0vh 10% 0px 10%;
         text-align: center;
@@ -240,9 +262,13 @@
     }
     
     
+    
 }
 
 @media (max-width : 490px) {
+    .section-1 .container header h2 {
+        font-size : 28px;
+    }
     .section-1 .container main section:nth-child(1) {
         padding: 0vh 5% 0px 5%;
         /* background-color: pink; */
@@ -255,8 +281,13 @@
         font-size: 18px;
         line-height: 20px;
     }
+    
     /* FAÇA RESPONSIVIDADE ATÉ 360PIXELS, MENOR QUE ISSO SÓ O GALAXY FOLD, QUE PODE SER IGNORADO */
 }
 
-
+@media (max-width : 380px) {
+    .section-1 .container header h2 {
+        font-size : 23px;
+    }
+}
 
