@@ -18,8 +18,8 @@ import CategoryCard from '../../components/category-card'
 
 const Home = ()=> {
     return (
-        <>
-        {/* <Animation/> */}
+        <div className="teste">
+        <Animation/>
         <div className="section-1">
             <div className="container">
                 <header>
@@ -100,7 +100,7 @@ const Home = ()=> {
                 </section>
             </div>
         </div>
-    </>
+    </div>
     )
 }
 
