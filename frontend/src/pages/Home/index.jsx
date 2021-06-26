@@ -19,7 +19,7 @@ import CategoryCard from '../../components/category-card'
 const Home = ()=> {
     return (
         <div className="teste">
-        <Animation/>
+        {/* <Animation/> */}
         <div className="section-1">
             <div className="container">
                 <header>
@@ -52,7 +52,7 @@ const Home = ()=> {
                     <CardCourse 
                         image={phpCourse} 
                         alt={"Elefante mascote do php"}>
-                        Aprenda Back-End com PHP 7
+                        Aprenda Back-End com <br/> PHP 7
                     </CardCourse>
 
                     <CardCourse 

@@ -21,7 +21,7 @@ const App = () => {
    
     <div>
       <Home/>
-      <p style={{background:"red"}}>{variavel}</p>
+      <p>{variavel}</p>
       <button onClick={()=>{teste()}}>AAAAAAAAAAAAAA</button>
     </div>
   )

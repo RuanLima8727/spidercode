@@ -144,6 +144,7 @@
     color: #FEFBEC ;
     border : 2px solid #FEFBEC;
     margin-bottom : 64px;
+    overflow: hidden;
    
  }
 
@@ -243,14 +244,24 @@
     .section-1 .container main section:nth-child(2){
         display: none;
      }
+
+     .section-3 {
+         height: 95vh;
+     }
+     .section-3 .container {
+         height: 95vh;
+     }
+     .section-3 .container .category-card-container {
+        height: 53vh;
+    }
 }
 
 @media (max-width : 740px) {
     .section-2 {
-        height: 172vh;
+        height: 160vh;
     }
     .section-2 .container {
-        height: 172vh;
+        height: 160vh;
     }
     .section-2 .container p {
         padding-top: 2%;
@@ -297,6 +308,19 @@
         width: 60%;
     }
 
+    .section-3 {
+        height: 118vh;
+    }
+    .section-3 .container {
+        height: 118vh;
+    }
+    .section-3 .container .category-card-container {
+       height: 78vh;
+   }
+   .section-3 .container .category-card-container section {
+        justify-content: center;
+   }
+
 }
 
 @media (max-width : 490px) {
@@ -319,6 +343,9 @@
     .section-2 .container h2 {
         font-size: 28px;
     }
+    .section-3 .container h2 {
+        font-size: 28px;
+    }
     
     /* FAÇA RESPONSIVIDADE ATÉ 360PIXELS, MENOR QUE ISSO SÓ O GALAXY FOLD, QUE PODE SER IGNORADO */
 }
@@ -327,8 +354,6 @@
     .section-1 .container header h2 {
         font-size : 23px;
     }
-    .teste {
-        width: 375px;
-    }
+   
 }
 
