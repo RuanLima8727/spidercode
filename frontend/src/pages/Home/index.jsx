@@ -10,6 +10,12 @@ import flutterCourse from '../../assets/images/courses/flutter.png'
 import backCard from '../../assets/images/backend.png'
 import frontCard from '../../assets/images/frontend.png'
 import barsSolid from '../../assets/images/bars-solid.svg'
+import quoteR from '../../assets/images/quotesRight.svg'
+import quoteL from '../../assets/images/quotesLeft.svg'
+import uRImage from '../../assets/images/userReviewImage.svg'
+import githubImage from '../../assets/images/github-footer.svg'
+import linkedinImage from '../../assets/images/linkedin-footer.svg'
+
 
 import Animation from '../../components/animation'
 import CardCourse from '../../components/card-course'
@@ -21,7 +27,7 @@ const Home = ()=> {
         <div className="teste">
         {/* <Animation/> */}
         <div className="section-1">
-            <div className="container">
+            <div className="box">
                 <header>
                     <h2>SPIDER CODE</h2>
                     <nav>
@@ -45,7 +51,7 @@ const Home = ()=> {
             </div>
         </div>
         <div className="section-2">
-            <div className="container">
+            <div className="box">
                 <h2>3 Cursos totalmente de graça!</h2>
                 <p>Crie uma conta e receba 3 cursos gratuitamente!!</p>
                 <section className="card-container">
@@ -75,7 +81,7 @@ const Home = ()=> {
             </div>
         </div>
         <div className="section-3">
-            <div className="container">
+            <div className="box">
                 <h2>O que oferecemos para você!</h2>
                 <section className="category-card-container">
                     <section>
@@ -100,6 +106,47 @@ const Home = ()=> {
                 </section>
             </div>
         </div>
+        <div className="section-4">
+            <div className="box">
+                <h2>Depoimentos</h2>
+                <div className="user-image-review">
+                    <img src={uRImage} alt="Imagem do usuario que fez o depoimento" />
+                </div>
+                <div className="review">
+                    <img src={quoteL} alt="Começo das aspas duplas" />
+                    <p>
+                        Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!
+                    </p>
+                    <img src={quoteR} alt="Final das aspas duplas" />
+                </div>
+                <div className="user-name-review">
+                    <h4>
+                        Joaquim
+                    </h4>
+                </div>
+            </div>
+        </div>
+        <footer>
+
+            <div className="box">
+                <div className="link">
+                    <a href="https://github.com/RuanLima8727">
+                        <img src={githubImage} alt="Github do autor do site" />
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/ruan-ribeiro/">
+                        <img href="" src={linkedinImage} alt="Linkedin do autor do site" />
+                    </a>
+                </div>
+                
+                <div className="copyright">
+                    <p>&copy; Spider Code - Alguns direitos reservados -  {new Date().getFullYear()}</p>
+                </div>
+
+                
+
+            </div>
+        </footer>
     </div>
     )
 }
