@@ -10,8 +10,6 @@ import flutterCourse from '../../assets/images/courses/flutter.png'
 import backCard from '../../assets/images/backend.png'
 import frontCard from '../../assets/images/frontend.png'
 import barsSolid from '../../assets/images/bars-solid.svg'
-import quoteR from '../../assets/images/quotesRight.svg'
-import quoteL from '../../assets/images/quotesLeft.svg'
 import uRImage from '../../assets/images/userReviewImage.svg'
 import githubImage from '../../assets/images/github-footer.svg'
 import linkedinImage from '../../assets/images/linkedin-footer.svg'
@@ -20,6 +18,7 @@ import linkedinImage from '../../assets/images/linkedin-footer.svg'
 import Animation from '../../components/animation'
 import CardCourse from '../../components/card-course'
 import CategoryCard from '../../components/category-card'
+import CarouselItem from '../../components/carousel-items'
 
 
 const Home = ()=> {
@@ -109,25 +108,11 @@ const Home = ()=> {
         <div className="section-4">
             <div className="box">
                 <h2>Depoimentos</h2>
-                <div className="user-image-review">
-                    <img src={uRImage} alt="Imagem do usuario que fez o depoimento" />
-                </div>
-                <div className="review">
-                    <img src={quoteL} alt="Começo das aspas duplas" />
-                    <p>
-                        Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!
-                    </p>
-                    <img src={quoteR} alt="Final das aspas duplas" />
-                </div>
-                <div className="user-name-review">
-                    <h4>
-                        Joaquim
-                    </h4>
-                </div>
+                <CarouselItem image={uRImage} reviewName={"Joaquim"}
+                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
             </div>
         </div>
         <footer>
-
             <div className="box">
                 <div className="link">
                     <a href="https://github.com/RuanLima8727">
@@ -135,16 +120,13 @@ const Home = ()=> {
                     </a>
 
                     <a href="https://www.linkedin.com/in/ruan-ribeiro/">
-                        <img href="" src={linkedinImage} alt="Linkedin do autor do site" />
+                        <img src={linkedinImage} alt="Linkedin do autor do site" />
                     </a>
                 </div>
                 
                 <div className="copyright">
                     <p>&copy; Spider Code - Alguns direitos reservados -  {new Date().getFullYear()}</p>
                 </div>
-
-                
-
             </div>
         </footer>
     </div>

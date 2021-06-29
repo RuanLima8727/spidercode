@@ -213,34 +213,6 @@
     margin-top: 64px;
 }
 
-.section-4 .box .user-image-review {
-    display: flex;
-    justify-content: center;
-}
-
-.section-4 .box .user-image-review img {
-    width: 300px;
-}
-
-.section-4 .box .review {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 60%;
-    
-}
-.section-4 .box .review p {
-    color : #FEFBEC ; 
-    text-align: center;
-    padding: 0px 6px;
-}
-.section-4 .box .user-name-review h4 {
-    text-align: center;
-    font-size: 25px;
-    color : #FEFBEC ; 
-    margin-bottom: 64px;
-}
 
 footer {
     background-color: #ED4731;
@@ -259,8 +231,6 @@ footer .box {
     align-items: center;
     flex-wrap: wrap;
 }
-
-
 
 footer .box .link {
     display: flex;
@@ -415,6 +385,9 @@ footer .box .copyright {
    .section-3 .box .category-card-container section {
         justify-content: center;
    }
+   footer .box .copyright {
+       font-size: 13px;
+   }
 
 }
 
@@ -440,6 +413,12 @@ footer .box .copyright {
     }
     .section-3 .box h2 {
         font-size: 28px;
+    }
+    footer .box .link a img {
+        height: 5vh;
+    }
+    footer .box .copyright {
+        font-size: 10px;
     }
     
     /* FAÇA RESPONSIVIDADE ATÉ 360PIXELS, MENOR QUE ISSO SÓ O GALAXY FOLD, QUE PODE SER IGNORADO */

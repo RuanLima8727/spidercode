@@ -1,0 +1,29 @@
+
+.section-4 .box .user-image-review {
+    display: flex;
+    justify-content: center;
+}
+
+.section-4 .box .user-image-review img {
+    width: 300px;
+}
+
+.section-4 .box .review {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 60%;
+    
+}
+.section-4 .box .review p {
+    color : #FEFBEC ; 
+    text-align: center;
+    padding: 0px 6px;
+}
+.section-4 .box .user-name-review h4 {
+    text-align: center;
+    font-size: 25px;
+    color : #FEFBEC ; 
+    margin-bottom: 64px;
+}
