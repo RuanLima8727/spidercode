@@ -24,11 +24,13 @@ a {
 
 /* Código para edição da barra de rolagem */
 
+/*Visualização da barra de rolagem desativada*/
 ::-webkit-scrollbar {
-    width: 10px;
+    display: none;
+    /* width: 10px; */
     
 }
-
+/* 
 ::-webkit-scrollbar-thumb {
     background-color: #2b3784;
  
@@ -38,6 +40,6 @@ a {
     background-color: #FEFBEC;
     border-radius: 10px;
     
-}
+} */
 
 

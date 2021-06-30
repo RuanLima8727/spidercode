@@ -21,9 +21,31 @@ import CategoryCard from '../../components/category-card'
 import CarouselItem from '../../components/carousel-items'
 
 
+
 const Home = ()=> {
+    function horizontalScroll(e) {
+        if (e.deltaY > 0) {
+           e.target.scrollBy(300,0)
+         }
+         else {
+           e.target.scrollBy(-300,0)
+         }
+       console.log(e.deltaY)}
+       
+
+    function onlyHorizontalScrollActive() {
+        var onlyHorizontalScrolllActive = document.getElementsByTagName("body")[0].style = "overflow:hidden;"
+        console.log("foi")
+        console.log(onlyHorizontalScrolllActive)
+    }
+    function onlyHorizontalScrollDesactive() {
+        var onlyHorizontalScrollDesactive = document.getElementsByTagName("body")[0].style = "overflow:visible;"
+        console.log("foi")
+        console.log(onlyHorizontalScrollDesactive)
+    }
+    
     return (
-        <div className="teste">
+        <div>
         {/* <Animation/> */}
         <div className="section-1">
             <div className="box">
@@ -108,12 +130,36 @@ const Home = ()=> {
         <div className="section-4">
             <div className="box">
                 <h2>Depoimentos</h2>
-                <CarouselItem image={uRImage} reviewName={"Joaquim"}
-                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                
+
+                <div id="items-wrapper">
+                    <div id="items" onWheel={horizontalScroll} onMouseOver={ onlyHorizontalScrollActive} onMouseOut={ onlyHorizontalScrollDesactive}>
+                        <div className="item">
+                            <div className="itemContainer">
+                                <CarouselItem image={uRImage} reviewName={"Joaquim"} 
+                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                            </div>
+                        </div>
+                        
+                        <div className="item">
+                            <div className="itemContainer">
+                                <CarouselItem image={uRImage} reviewName={"Joaquim"}
+                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                            </div>
+                        </div>
+
+                        <div className="item">
+                            <div className="itemContainer">
+                                <CarouselItem image={uRImage} reviewName={"Joaquim"}
+                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <footer>
-            <div className="box">
+            <div className="box" >
                 <div className="link">
                     <a href="https://github.com/RuanLima8727">
                         <img src={githubImage} alt="Github do autor do site" />
@@ -127,6 +173,9 @@ const Home = ()=> {
                 <div className="copyright">
                     <p>&copy; Spider Code - Alguns direitos reservados -  {new Date().getFullYear()}</p>
                 </div>
+                {/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+                BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
+                CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC */}
             </div>
         </footer>
     </div>

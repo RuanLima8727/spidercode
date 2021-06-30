@@ -1,27 +1,32 @@
 
-.section-4 .box .user-image-review {
+.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+}
+.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
+    pointer-events: auto;
+    cursor: pointer;
+   
 }
 
-.section-4 .box .user-image-review img {
+.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img:nth-child(2) {
     width: 300px;
+    pointer-events: none;
 }
 
-.section-4 .box .review {
+.section-4 .box #items-wrapper #items .item .itemContainer .review {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 60%;
-    
+    width: 60%;    
 }
-.section-4 .box .review p {
+.section-4 .box #items-wrapper #items .item .itemContainer .review p {
     color : #FEFBEC ; 
     text-align: center;
     padding: 0px 6px;
 }
-.section-4 .box .user-name-review h4 {
+.section-4 .box #items-wrapper #items .item .itemContainer .user-name-review h4 {
     text-align: center;
     font-size: 25px;
     color : #FEFBEC ; 
