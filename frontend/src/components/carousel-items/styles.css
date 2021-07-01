@@ -25,7 +25,9 @@
     color : #FEFBEC ; 
     text-align: center;
     padding: 0px 6px;
+    line-height: 20px;
 }
+
 .section-4 .box #items-wrapper #items .item .itemContainer .user-name-review h4 {
     text-align: center;
     font-size: 25px;
@@ -57,12 +59,13 @@
         padding: 25px 0px;
     }
     .section-4 .box #items-wrapper #items .item .itemContainer .review p {
+        line-height: 20px;
         font-size: 15px;
     }
 }
 @media (max-width : 500px) {
-    .section-4 .box #items-wrapper #items .item .itemContainer .review p {
-        font-size: 12px;
+    .section-4 .box #items-wrapper #items .item .itemContainer .user-name-review h4 {
+        font-size: 20px;
     }
 }
 @media (max-width : 490px) {
@@ -70,12 +73,15 @@
         width: 230px;
     }
     .section-4 .box #items-wrapper #items .item .itemContainer .review p {
-        font-size: 10px;
+        line-height: 20px;
+        font-size: 13px;
+        
     }
 }
 
 @media (max-width : 363px) {
     .section-4 .box #items-wrapper #items .item .itemContainer .review p {
-        font-size: 9px;
+        line-height: 20px;
+        font-size: 15px;
     }
 }

@@ -233,8 +233,7 @@
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
     scroll-behavior: smooth;
-    
-    
+    width: 100%;     
   }
 
 .section-4 .box #items-wrapper #items .item {
@@ -309,9 +308,20 @@ footer .box .copyright {
         width: 45%;
         /* background-color: rgb(206, 186, 7); */
     }
-   
+         
 }
-
+/* GAMBIARRA PARA RESOLVER CARROSSEL TRAVADO NO SEGUNDO ITEM DENTRO DO INTERVALO DE 20PX */
+@media (max-width : 1020px ) {
+    .section-4 .box #items-wrapper #items {
+        width: 800px;   
+      }
+}
+@media (max-width : 1000px ) {
+    .section-4 .box #items-wrapper #items {
+        width: 100%;     
+      }
+}
+/* GAMBIARRA PARA RESOLVER CARROSSEL TRAVADO NO SEGUNDO ITEM DENTRO DO INTERVALO DE 20PX */
 
 @media (max-width : 960px) {
     .section-1 .box main section:nth-child(2) img{
@@ -444,9 +454,13 @@ footer .box .copyright {
 
 }
 @media (max-width: 580px) {
+    .section-4 .box h2 {
+        font-size : 30px;
+    }
     .section-4 .box #items-wrapper #items .item .itemContainer {
         justify-content: center;
     }
+    
 }
 @media (max-width : 490px) {
     .section-1 .box header h2 {
