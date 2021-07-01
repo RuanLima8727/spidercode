@@ -13,6 +13,8 @@ import barsSolid from '../../assets/images/bars-solid.svg'
 import uRImage from '../../assets/images/userReviewImage.svg'
 import githubImage from '../../assets/images/github-footer.svg'
 import linkedinImage from '../../assets/images/linkedin-footer.svg'
+import arrowL from '../../assets/images/arrow-carrousel-l.svg'
+import arrowR from '../../assets/images/arrow-carrousel-r.svg'
 
 
 import Animation from '../../components/animation'
@@ -30,18 +32,27 @@ const Home = ()=> {
          else {
            e.target.scrollBy(-300,0)
          }
-       console.log(e.deltaY)}
+      }
+
+
+      //AINDA NÃO FUNCIONAM
+    //    function horizontalScrollLeft(e) {
+    //        e.target.scrollBy(-300,0)
+    //     }
+
+    //    function horizontalScrollRight(e) {
+          
+    //     e.target.scrollBy(300,0)
+    //     }
        
 
     function onlyHorizontalScrollActive() {
+
         var onlyHorizontalScrolllActive = document.getElementsByTagName("body")[0].style = "overflow:hidden;"
-        console.log("foi")
-        console.log(onlyHorizontalScrolllActive)
     }
     function onlyHorizontalScrollDesactive() {
+
         var onlyHorizontalScrollDesactive = document.getElementsByTagName("body")[0].style = "overflow:visible;"
-        console.log("foi")
-        console.log(onlyHorizontalScrollDesactive)
     }
     
     return (
@@ -130,31 +141,41 @@ const Home = ()=> {
         <div className="section-4">
             <div className="box">
                 <h2>Depoimentos</h2>
-                
-
                 <div id="items-wrapper">
+                
                     <div id="items" onWheel={horizontalScroll} onMouseOver={ onlyHorizontalScrollActive} onMouseOut={ onlyHorizontalScrollDesactive}>
+                        
                         <div className="item">
                             <div className="itemContainer">
+
                                 <CarouselItem image={uRImage} reviewName={"Joaquim"} 
                                     reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                    
                             </div>
                         </div>
                         
                         <div className="item">
                             <div className="itemContainer">
-                                <CarouselItem image={uRImage} reviewName={"Joaquim"}
+
+                                <CarouselItem image={uRImage} reviewName={"Segundo"}
                                     reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
                             </div>
                         </div>
 
                         <div className="item">
                             <div className="itemContainer">
-                                <CarouselItem image={uRImage} reviewName={"Joaquim"}
+                                <CarouselItem image={uRImage} reviewName={"Terceiro"}
+                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                </div>
+                        </div>
+                        <div className="item">
+                            <div className="itemContainer">
+                                <CarouselItem image={uRImage} reviewName={"Quarto"}
                                     reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
                                 </div>
                         </div>
                     </div>
+                    
                 </div>
             </div>
         </div>
@@ -169,13 +190,9 @@ const Home = ()=> {
                         <img src={linkedinImage} alt="Linkedin do autor do site" />
                     </a>
                 </div>
-                
                 <div className="copyright">
                     <p>&copy; Spider Code - Alguns direitos reservados -  {new Date().getFullYear()}</p>
                 </div>
-                {/* AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-                BBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBBB
-                CCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC */}
             </div>
         </footer>
     </div>

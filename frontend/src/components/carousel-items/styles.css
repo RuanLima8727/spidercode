@@ -1,17 +1,17 @@
 
 .section-4 .box #items-wrapper #items .item .itemContainer .user-image-review {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
 }
-.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
+/* .section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
     pointer-events: auto;
     cursor: pointer;
-   
-}
+} */
 
-.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img:nth-child(2) {
-    width: 300px;
-    pointer-events: none;
+.section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
+    padding-top: 6%;
+    width: 250px;
+    /* pointer-events: none; */
 }
 
 .section-4 .box #items-wrapper #items .item .itemContainer .review {
@@ -19,7 +19,7 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    width: 60%;    
+    width: 90%;    
 }
 .section-4 .box #items-wrapper #items .item .itemContainer .review p {
     color : #FEFBEC ; 
@@ -30,5 +30,52 @@
     text-align: center;
     font-size: 25px;
     color : #FEFBEC ; 
-    margin-bottom: 64px;
+ 
+}
+
+@media (max-width : 740px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .review {
+        width: 100%;
+    }
+    .section-4 .box #items-wrapper #items .item .itemContainer .review img {
+            width: 6%;
+    }
+}
+
+@media (max-width : 660px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .review img {
+       display:none;
+    }
+}
+
+@media (max-width : 580px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
+        padding-top: 6%;
+        width: 250px;
+    }
+    .section-4 .box #items-wrapper #items .item .itemContainer .review  {
+        padding: 25px 0px;
+    }
+    .section-4 .box #items-wrapper #items .item .itemContainer .review p {
+        font-size: 15px;
+    }
+}
+@media (max-width : 500px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .review p {
+        font-size: 12px;
+    }
+}
+@media (max-width : 490px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .user-image-review img {
+        width: 230px;
+    }
+    .section-4 .box #items-wrapper #items .item .itemContainer .review p {
+        font-size: 10px;
+    }
+}
+
+@media (max-width : 363px) {
+    .section-4 .box #items-wrapper #items .item .itemContainer .review p {
+        font-size: 9px;
+    }
 }
