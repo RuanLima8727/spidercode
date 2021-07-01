@@ -41,12 +41,7 @@
     }
     .section-4 .box #items-wrapper #items .item .itemContainer .review img {
             width: 6%;
-    }
-}
-
-@media (max-width : 660px) {
-    .section-4 .box #items-wrapper #items .item .itemContainer .review img {
-       display:none;
+            display:none;
     }
 }
 
@@ -74,7 +69,7 @@
     }
     .section-4 .box #items-wrapper #items .item .itemContainer .review p {
         line-height: 20px;
-        font-size: 13px;
+        font-size: 12px;
         
     }
 }
@@ -82,6 +77,6 @@
 @media (max-width : 363px) {
     .section-4 .box #items-wrapper #items .item .itemContainer .review p {
         line-height: 20px;
-        font-size: 15px;
+        font-size: 12px;
     }
 }

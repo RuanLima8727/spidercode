@@ -33,29 +33,37 @@ const Home = ()=> {
            e.target.scrollBy(-300,0)
          }
       }
-
-
     var count = 0
     var i = 0
     function carrousselCounter(e) {
         if (count==0){
             setInterval(()=>{
-
                 if (i<3) {
-                    e.target.scrollBy(300,0)
+                    e.target.parentElement.parentElement.parentElement.parentElement.scrollBy(300,0)
                     i ++
+                    console.log(e.target.parentElement.parentElement.parentElement.parentElement)
                 }
                 else if (i<7) {
-                    e.target.scrollBy(-300,0)
+                    e.target.parentElement.parentElement.parentElement.parentElement.scrollBy(-300,0)
                     i ++
                     if (i == 6 ) {
                         i = 0
                     }
                 }
-            },3500);
+            },5000);
             count= 1
         }
      }
+    function scrollBtn(e) {
+
+        if (e.target.className == "arrowR") {
+            e.target.parentElement.children[1].scrollBy(300,0)
+        }
+        else {
+            e.target.parentElement.children[1].scrollBy(-300,0)
+        }
+        console.log(e.target.className)
+    }
 
     function onlyHorizontalScrollActive() {
         document.getElementsByTagName("body")[0].style = "overflow:hidden;"
@@ -151,8 +159,8 @@ const Home = ()=> {
             <div className="box">
                 <h2>Depoimentos</h2>
                 <div id="items-wrapper">
-                
-                    <div id="items" onWheel={horizontalScroll} onMouseOver={onlyHorizontalScrollActive} onMouseOut={onlyHorizontalScrollDesactive} onMouseOver={carrousselCounter}> 
+                <img src={arrowL} alt="" className="arrowL" onClick={scrollBtn}/>
+                    <div id="items" onWheel={horizontalScroll} onMouseOver={onlyHorizontalScrollActive} onMouseOut={onlyHorizontalScrollDesactive} onLoad={carrousselCounter}> 
                         
                         <div className="item">
                             <div className="itemContainer">
@@ -184,7 +192,7 @@ const Home = ()=> {
                                 </div>
                         </div>
                     </div>
-                    
+                    <img src={arrowR} alt="" className="arrowR" onClick={scrollBtn} />
                 </div>
             </div>
         </div>

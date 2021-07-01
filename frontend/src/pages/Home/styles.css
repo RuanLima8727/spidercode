@@ -223,9 +223,13 @@
     
   }
 
-.section-4 .box #items-wrapper .arrow {
-    height: 10%;
-   
+.section-4 .box #items-wrapper .arrowL {
+    height: 5%;
+    padding-right: 2%;
+}
+.section-4 .box #items-wrapper .arrowR {
+    height: 5%;
+    padding-left: 2%;
 }
   
 .section-4 .box #items-wrapper #items {
@@ -464,9 +468,16 @@ footer .box .copyright {
     .section-4 .box h2 {
         font-size : 30px;
     }
+    .section-4 .box #items-wrapper .arrowL {
+        height: 3%;  
+    }
+    .section-4 .box #items-wrapper .arrowR {
+        height: 3%;  
+    }
     .section-4 .box #items-wrapper #items .item .itemContainer {
         justify-content: center;
     }
+    
     
 }
 @media (max-width : 490px) {
