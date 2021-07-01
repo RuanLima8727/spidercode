@@ -35,24 +35,33 @@ const Home = ()=> {
       }
 
 
-      //AINDA NÃO FUNCIONAM
-    //    function horizontalScrollLeft(e) {
-    //        e.target.scrollBy(-300,0)
-    //     }
+    var count = 0
+    var i = 0
+    function carrousselCounter(e) {
+        if (count==0){
+            setInterval(()=>{
 
-    //    function horizontalScrollRight(e) {
-          
-    //     e.target.scrollBy(300,0)
-    //     }
-       
+                if (i<3) {
+                    e.target.scrollBy(300,0)
+                    i ++
+                }
+                else if (i<7) {
+                    e.target.scrollBy(-300,0)
+                    i ++
+                    if (i == 6 ) {
+                        i = 0
+                    }
+                }
+            },3500);
+            count= 1
+        }
+     }
 
     function onlyHorizontalScrollActive() {
-
-        var onlyHorizontalScrolllActive = document.getElementsByTagName("body")[0].style = "overflow:hidden;"
+        document.getElementsByTagName("body")[0].style = "overflow:hidden;"
     }
     function onlyHorizontalScrollDesactive() {
-
-        var onlyHorizontalScrollDesactive = document.getElementsByTagName("body")[0].style = "overflow:visible;"
+        document.getElementsByTagName("body")[0].style = "overflow:visible;"
     }
     
     return (
@@ -143,7 +152,7 @@ const Home = ()=> {
                 <h2>Depoimentos</h2>
                 <div id="items-wrapper">
                 
-                    <div id="items" onWheel={horizontalScroll} onMouseOver={ onlyHorizontalScrollActive} onMouseOut={ onlyHorizontalScrollDesactive}>
+                    <div id="items" onWheel={horizontalScroll} onMouseOver={onlyHorizontalScrollActive} onMouseOut={onlyHorizontalScrollDesactive} onMouseOver={carrousselCounter}> 
                         
                         <div className="item">
                             <div className="itemContainer">
