@@ -15,6 +15,7 @@ import githubImage from '../../assets/images/github-footer.svg'
 import linkedinImage from '../../assets/images/linkedin-footer.svg'
 import arrowL from '../../assets/images/arrow-carrousel-l.svg'
 import arrowR from '../../assets/images/arrow-carrousel-r.svg'
+import dropdownLine from '../../assets/images/dropdown-line.png'
 
 
 import Animation from '../../components/animation'
@@ -41,7 +42,6 @@ const Home = ()=> {
                 if (i<3) {
                     e.target.parentElement.parentElement.parentElement.parentElement.scrollBy(300,0)
                     i ++
-                    console.log(e.target.parentElement.parentElement.parentElement.parentElement)
                 }
                 else if (i<7) {
                     e.target.parentElement.parentElement.parentElement.parentElement.scrollBy(-300,0)
@@ -62,7 +62,6 @@ const Home = ()=> {
         else {
             e.target.parentElement.children[1].scrollBy(-300,0)
         }
-        console.log(e.target.className)
     }
 
     function onlyHorizontalScrollActive() {
@@ -71,7 +70,20 @@ const Home = ()=> {
     function onlyHorizontalScrollDesactive() {
         document.getElementsByTagName("body")[0].style = "overflow:visible;"
     }
-    
+    var j = 0
+    function dropdown(e) {
+        
+        console.log(j)
+        if (j == 0) {
+            e.target.parentElement.parentElement.parentElement.parentElement.children[1].style = "display:flex;"
+            j = 1
+        }
+        else {
+            e.target.parentElement.parentElement.parentElement.parentElement.children[1].style = "display:none;"
+            j = 0
+        }
+    }
+
     return (
         <div>
         {/* <Animation/> */}
@@ -82,11 +94,20 @@ const Home = ()=> {
                     <nav>
                         <button >LOGIN</button>
                         <button >SE INSCREVA</button> 
-                        <div>
-                            <img src={barsSolid} alt="Menu hamburguer"/>    
-                        </div>   
+                        <div className="mobile-menu" onClick={dropdown} >
+                            <img src={barsSolid} alt="Menu hamburguer" />    
+                        </div>
                     </nav>
                </header>
+               <div className="dropdown-container">
+                    <div className="dropdown">
+                        <div className="dropdown-content">
+                            <p className="dropdown-text">Login</p>
+                            <img src={dropdownLine} alt="" className="dropdown-img" />
+                            <p className="dropdown-text">Se Inscreva</p>
+                        </div>
+                    </div>
+                </div>
                 <main>
                     <section>
                         <h1>Junte-se com mais de mil alunos!</h1>
