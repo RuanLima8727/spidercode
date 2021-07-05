@@ -10,12 +10,20 @@ import flutterCourse from '../../assets/images/courses/flutter.png'
 import backCard from '../../assets/images/backend.png'
 import frontCard from '../../assets/images/frontend.png'
 import barsSolid from '../../assets/images/bars-solid.svg'
-import uRImage from '../../assets/images/userReviewImage.svg'
+import uRImage1 from '../../assets/images/userReviewImage1.svg'
+import uRImage2 from '../../assets/images/userReviewImage2.svg'
+import uRImage3 from '../../assets/images/userReviewImage3.svg'
+import uRImage4 from '../../assets/images/userReviewImage4.svg'
+
 import githubImage from '../../assets/images/github-footer.svg'
 import linkedinImage from '../../assets/images/linkedin-footer.svg'
 import arrowL from '../../assets/images/arrow-carrousel-l.svg'
 import arrowR from '../../assets/images/arrow-carrousel-r.svg'
 import dropdownLine from '../../assets/images/dropdown-line.png'
+import cloud from '../../assets/images/cloud.png'
+import database from '../../assets/images/database.png'
+import linux from '../../assets/images/linux.png'
+import uxui from '../../assets/images/ux-ui.png'
 
 
 import Animation from '../../components/animation'
@@ -158,20 +166,20 @@ const Home = ()=> {
                         <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
                             category={"Back-End"} courseAmount={"22"}/>
 
-                        <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
-                            category={"Back-End"} courseAmount={"22"}/>
+                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
+                            category={"Front-End"} courseAmount={"15"}/>
 
-                        <CategoryCard image={backCard} alt={"imagem do tipo de curso"}
-                            category={"Back-End"} courseAmount={"22"}/>
+                        <CategoryCard image={cloud} alt={"imagem do tipo de curso"}
+                            category={"Cloud"} courseAmount={"7"}/>
                     
-                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
-                            category={"Back-End"} courseAmount={"22"}/>
+                        <CategoryCard image={database} alt={"imagem do tipo de curso"}
+                            category={"Database"} courseAmount={"3"}/>
 
-                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
-                            category={"Back-End"} courseAmount={"22"}/>
+                        <CategoryCard image={linux} alt={"imagem do tipo de curso"}
+                            category={"Linux"} courseAmount={"5"}/>
 
-                        <CategoryCard image={frontCard} alt={"imagem do tipo de curso"}
-                            category={"Back-End"} courseAmount={"22"}/>
+                        <CategoryCard image={uxui} alt={"imagem do tipo de curso"}
+                            category={"UX-UI"} courseAmount={"16"}/>
                     </section>
                 </section>
             </div>
@@ -186,7 +194,7 @@ const Home = ()=> {
                         <div className="item">
                             <div className="itemContainer">
 
-                                <CarouselItem image={uRImage} reviewName={"Joaquim"} 
+                                <CarouselItem image={uRImage1} reviewName={"Joaquim"} 
                                     reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
                                     
                             </div>
@@ -195,21 +203,21 @@ const Home = ()=> {
                         <div className="item">
                             <div className="itemContainer">
 
-                                <CarouselItem image={uRImage} reviewName={"Segundo"}
-                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                <CarouselItem image={uRImage2} reviewName={"José"}
+                                    reviewText={ "Conteúdos super relevantes e divertidos! Não é chato ou pesado em momento nenhum."}/>
                             </div>
                         </div>
 
                         <div className="item">
                             <div className="itemContainer">
-                                <CarouselItem image={uRImage} reviewName={"Terceiro"}
-                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                <CarouselItem image={uRImage3} reviewName={"André"}
+                                    reviewText={ "O professor consegue explicar conteúdos complexos de maneira simples, super recomendo para quem tem dificuldade!"}/>
                                 </div>
                         </div>
                         <div className="item">
                             <div className="itemContainer">
-                                <CarouselItem image={uRImage} reviewName={"Quarto"}
-                                    reviewText={ "Professor extremamente didático e com amplos conhecimentos e o curso tem conteúdo que permite exercitar o que é ensinado!"}/>
+                                <CarouselItem image={uRImage4} reviewName={"Antônia"}
+                                    reviewText={ "Conteúdo atualizado e super relevante para as exigências do mercado de trabalho!"}/>
                                 </div>
                         </div>
                     </div>
