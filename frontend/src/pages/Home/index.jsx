@@ -213,6 +213,7 @@ const Home = ()=> {
                                 <CarouselItem image={uRImage3} reviewName={"André"}
                                     reviewText={ "O professor consegue explicar conteúdos complexos de maneira simples, super recomendo para quem tem dificuldade!"}/>
                                 </div>
+
                         </div>
                         <div className="item">
                             <div className="itemContainer">
