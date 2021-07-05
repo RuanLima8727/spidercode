@@ -1,7 +1,8 @@
 # spidercode
 
 <h2>Projeto de portifólio, loja de cursos tematizada</h2>
-<p>É a tela inicial de um site de cursos feito para portifólio</p>
+<p>É a tela inicial de um site de cursos feito para portifólio</p><br/>
+<p>Link do site: https://spidercode-frontend.herokuapp.com/</p>
 
 React --> Porta 3000 - npm start em /frontend<br/>
 
