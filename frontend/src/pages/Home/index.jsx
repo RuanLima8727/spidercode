@@ -81,7 +81,7 @@ const Home = ()=> {
     var j = 0
     function dropdown(e) {
         
-        console.log(j)
+        
         if (j == 0) {
             e.target.parentElement.parentElement.parentElement.parentElement.children[1].style = "display:flex;"
             j = 1
